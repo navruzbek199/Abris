@@ -8,6 +8,13 @@
     <meta name="theme-color" content="#333">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#333">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#333">
     <link rel="stylesheet" href="../libs/animate.css">
@@ -16,8 +23,8 @@
     <link rel="stylesheet" href="../libs/fontawesome/css/all.css">
     <link rel="stylesheet" href="../libs/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="../libs/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../libs/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 
     <title>Abris</title>
@@ -66,9 +73,53 @@
                     </nav>
                 </div>
             </div>
+            <div id="nav-icon1" style="margin-right: 16px;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
-
+    <div class="hamburger-menu">
+        <div class="container">
+            <div class="bar-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">О компании</a>
+                        </li>
+                        <li>
+                            <a href="trade.html">Торговые требования</a>
+                        </li>
+                        <li>
+                            <a href="vacancies.html">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="product-first.html">Продукция</a>
+                        </li>
+                        <li>
+                            <a href="product-two.html">Авторизация по регионам</a>
+                        </li>
+                        <li>
+                            <a href="product-three.html">Сервисное обслуживание</a>
+                        </li>
+                        <li>
+                            <a href="pro-solution.html">Продукты и решения</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="contact-page">
             <div class="container">
@@ -95,236 +146,139 @@
 
 
 
-
-    <section>
-        <div class="tab-sec">
-            <div class="container">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu1">Все</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu2">Азербайджан</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu3">Армения</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu4">Беларусь</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu5">Грузия</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#home">Казахстан</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu6">Кыргызстан</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu7">Монголия</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu8">Таджикистан</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu9">Туркменистан</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu10">Узбекистан</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane container fade" id="menu1">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
+    <div class="container">
+        <section class="accordion">
+            <section class="accordion-tabs">
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="1">Все</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="2">Азербайджан</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="3">Армения</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="4">Беларусь</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="5">Грузия</a>
+                <a class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">Казахстан</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="6">Кыргызстан</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="7">Монголия</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="8">Таджикистан</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="9">Туркменистан</a>
+                <a class="accordion-tab" data-actab-group="0" data-actab-id="10">Узбекистан</a>
+            </section>
+            <section class="accordion-content">
+                <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+                    <div class="accordion-item__label row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="left-map-contact">
+                                <div class="title">
+                                    <h1>Казахстан</h1>
+                                </div>
+                                <div class="adress">
+                                    <p>Abris Distribution Kazakhstan <br>
+                                        Алматы, пр. Достык, 248Б-202А
+                                        <br>
+                                        <br>
+                                        +7 (727) 339 51 55 <br>
+                                        sales@abrisdc.kz</p>
+                                </div>
+                                <div class="brand">
+                                    <img src="img/Abris logo2.svg" alt="">
+                                </div>
+                                <div class="new-link">
+                                    <a href="#">На карте <i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane container fade" id="menu2">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
+                        <div class="col-lg-8 col-md-6 col-sm-12">
+                            <div class="right-map-contact">
+                                <img src="img/map-contact.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane container fade" id="menu3">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="accordion-item__container">
                     </div>
-                    <div class="tab-pane container fade" id="menu4">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+                    <h4 class="accordion-item__label">Tab 2</h4>
+                    <div class="accordion-item__container">
+                        <p>reprehenderit temporibus, assumenda cupiditate consequatur soluta odit ex repudiandae
+                            delectus cumque, provident hic sed quod? Quis, nam. Similique eaque quae vel recusandae
+                            expedita qui sint fugiat, nisi assumenda et ex molestiae atque deleniti magni, ipsam libero!
+                        </p>
                     </div>
-                    <div class="tab-pane container fade " id="menu5">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+                    <h4 class="accordion-item__label">Tab 3</h4>
+                    <div class="accordion-item__container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut
+                            facere minus, ipsa dolore animi quis alias eos, porro corporis quod esse quidem. Maxime a
+                            aperiam perspiciatis architecto?</p>
                     </div>
-                    <div class="tab-pane container active" id="home">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>Казахстан</h1>
-                                    </div>
-                                    <div class="adress">
-                                        <p>Abris Distribution Kazakhstan <br>
-                                            Алматы, пр. Достык, 248Б-202А
-                                            <br>
-                                            <br>
-                                            +7 (727) 339 51 55 <br>
-                                            sales@abrisdc.kz</p>
-                                    </div>
-                                    <div class="brand">
-                                        <img src="img/Abris logo2.svg" alt="">
-                                    </div>
-                                    <div class="new-link">
-                                        <a href="#">На карте <i class="fas fa-long-arrow-alt-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="right-map-contact">
-                                    <img src="img/map-contact.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="3">
+                    <h4 class="accordion-item__label">Tab 4</h4>
+                    <div class="accordion-item__container">
+                        <p>psum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere
+                            minus, ipsa dolore</p>
                     </div>
-                    <div class="tab-pane container fade" id="menu6">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="4">
+                    <h4 class="accordion-item__label">Tab 5</h4>
+                    <div class="accordion-item__container">
+                        <p>aborum similique facere quae. Quo cupiditate ad iste qui aliquam quibusdam quod, ut
+                            doloremque ipsa quas soluta, sapiente possimus, tempora rerum ab nesciunt vitae molestiae
+                            dolor earum illum repudiandae! Voluptas sed, soluta facere nisi perferendis cupiditate!
+                            Dicta et praesentium non ab, quod commodi, illo saepe accusantium tempora autem eos nemo.
+                            Animi, pariatur placeat laudantium dolorib!</p>
                     </div>
-                    <div class="tab-pane container fade" id="menu7">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="5">
+                    <h4 class="accordion-item__label">Tab 2</h4>
+                    <div class="accordion-item__container">
+                        <p>reprehenderit temporibus, assumenda cupiditate consequatur soluta odit ex repudiandae
+                            delectus cumque, provident hic sed quod? Quis, nam. Similique eaque quae vel recusandae
+                            expedita qui sint fugiat, nisi assumenda et ex molestiae atque deleniti magni, ipsam libero!
+                        </p>
                     </div>
-                    <div class="tab-pane container fade" id="menu8">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="6">
+                    <h4 class="accordion-item__label">Tab 3</h4>
+                    <div class="accordion-item__container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut
+                            facere minus, ipsa dolore animi quis alias eos, porro corporis quod esse quidem. Maxime a
+                            aperiam perspiciatis architecto?</p>
                     </div>
-                    <div class="tab-pane container fade" id="menu9">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="7">
+                    <h4 class="accordion-item__label">Tab 4</h4>
+                    <div class="accordion-item__container">
+                        <p>psum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere
+                            minus, ipsa dolore</p>
                     </div>
-                    <div class="tab-pane container fade" id="menu10">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="left-map-contact">
-                                    <div class="title">
-                                        <h1>empty</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="8">
+                    <h4 class="accordion-item__label">Tab 5</h4>
+                    <div class="accordion-item__container">
+                        <p>aborum similique facere quae. Quo cupiditate ad iste qui aliquam quibusdam quod, ut
+                            doloremque ipsa quas soluta, sapiente possimus, tempora rerum ab nesciunt vitae molestiae
+                            dolor earum illum repudiandae! Voluptas sed, soluta facere nisi perferendis cupiditate!
+                            Dicta et praesentium non ab, quod commodi, illo saepe accusantium tempora autem eos nemo.
+                            Animi, pariatur placeat laudantium dolorib!</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="accordion">
-        <section class="accordion-tabs">
-          <button class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">Tab 1</button>
-          <button class="accordion-tab" data-actab-group="0" data-actab-id="1">Tab 2</button>
-          <button class="accordion-tab" data-actab-group="0" data-actab-id="2">Tab 3</button>
-          <button class="accordion-tab" data-actab-group="0" data-actab-id="3">Tab 4</button>
-          <button class="accordion-tab" data-actab-group="0" data-actab-id="4">Tab 5</button>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="9">
+                    <h4 class="accordion-item__label">Tab 4</h4>
+                    <div class="accordion-item__container">
+                        <p>psum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere
+                            minus, ipsa dolore</p>
+                    </div>
+                </article>
+                <article class="accordion-item" data-actab-group="0" data-actab-id="10">
+                    <h4 class="accordion-item__label">Tab 4</h4>
+                    <div class="accordion-item__container">
+                        <p>psum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere
+                            minus, ipsa dolore</p>
+                    </div>
+                </article>
+            </section>
         </section>
-        <section class="accordion-content">
-          <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
-            <h4 class="accordion-item__label">Tab 1</h4>
-            <div class="accordion-item__container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere minus, ipsa dolore animi quis alias eos, porro corporis quod esse quidem. Maxime a aperiam perspiciatis architecto?</p>
-            </div>
-          </article>
-          <article class="accordion-item" data-actab-group="0" data-actab-id="1">
-            <h4 class="accordion-item__label">Tab 2</h4>
-            <div class="accordion-item__container">
-              <p>reprehenderit temporibus, assumenda cupiditate consequatur soluta odit ex repudiandae delectus cumque, provident hic sed quod? Quis, nam. Similique eaque quae vel recusandae expedita qui sint fugiat, nisi assumenda et ex molestiae atque deleniti magni, ipsam libero!</p>
-            </div>
-          </article>
-          <article class="accordion-item" data-actab-group="0" data-actab-id="2">
-            <h4 class="accordion-item__label">Tab 3</h4>
-            <div class="accordion-item__container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere minus, ipsa dolore animi quis alias eos, porro corporis quod esse quidem. Maxime a aperiam perspiciatis architecto?</p>
-            </div>
-          </article>
-          <article class="accordion-item" data-actab-group="0" data-actab-id="3">
-            <h4 class="accordion-item__label">Tab 4</h4>
-            <div class="accordion-item__container">
-              <p>psum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt minima? Ut facere minus, ipsa dolore</p>
-            </div>
-          </article>
-          <article class="accordion-item" data-actab-group="0" data-actab-id="4">
-            <h4 class="accordion-item__label">Tab 5</h4>
-            <div class="accordion-item__container">
-              <p>aborum similique facere quae. Quo cupiditate ad iste qui aliquam quibusdam quod, ut doloremque ipsa quas soluta, sapiente possimus, tempora rerum ab nesciunt vitae molestiae dolor earum illum repudiandae! Voluptas sed, soluta facere nisi perferendis cupiditate! Dicta et praesentium non ab, quod commodi, illo saepe accusantium tempora autem eos nemo. Animi, pariatur placeat laudantium dolorib!</p>
-            </div>
-          </article>
-        </section>
-      </section>
-
+    </div>
 
 
 
@@ -344,7 +298,7 @@
                                 возможности сотрудничества. Для того, чтобы начать работать <br>
                                 с нами, заполните регистрационную анкету, и наш Менеджер <br>
                                 свяжется с Вами.</p>
-                            <a href="#" class="btn">Оставить заявку
+                            <a href="#" class="btn" data-toggle="modal" data-target="#myModal">Оставить заявку
                                 <span><img src="img/chevron-right.svg" alt=""></span>
                             </a>
                         </div>
@@ -357,14 +311,184 @@
                                 Manalapan, NJ 07726 <br>
                                 Тел.: (732) 252-98-19 <br>
                                 E-mail: info@abrisdc.com</p>
-                            <img src="img/glob 2.png" alt="#">
+                            <img src="img/world-unscreen.gif" alt="globus">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Заявка</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="nameId">Имя</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Имя*" required>
+                                    <div id="nameId" class="form-text">Введите свое имя</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Фамилия</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Фамилия*" required>
+                                    <div id="emailHelp" class="form-text">Введите свою фамилию</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Должность</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Должность*"
+                                        required>
+                                    <div id="emailHelp" class="form-text">Введите свою должность</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="number">Телефон*</label>
+                                    <input type="text" class="form-control " id="numberId" placeholder="Телефон*">
+                                    <div id="numberId" class="form-text">Введите номер телефона</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">E-mail</label>
+                                    <input type="email" class="form-control" id="nameId" placeholder="E-mail*" required>
+                                    <div id="emailHelp" class="form-text">Введите адрес электронной почты</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Компания</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Компания*"
+                                        required>
+                                    <div id="emailHelp" class="form-text">Введите название вашей компании</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Страна</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Страна*" required>
+                                    <div id="emailHelp" class="form-text">Укажите ваш регион</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Интересующее решение</label>
+                                    <input type="name" class="form-control" id="nameId"
+                                        placeholder="Интересующее решение*" required>
+                                    <div id="emailHelp" class="form-text">Введите название интересующей вас позиции
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <a href="" class="btn">Оставить заявку <span><img src="img/arrow-white.svg" alt=""></span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                 
+                </div>
+          
+              </div>
+            </div>
+          </div>
     </section>
 
 
 
+
+
+
+
+
+    <script>
+        const labels = document.querySelectorAll(".accordion-item__label");
+        const tabs = document.querySelectorAll(".accordion-tab");
+
+        function toggleShow() {
+            const target = this;
+            const item = target.classList.contains("accordion-tab") ?
+                target :
+                target.parentElement;
+            const group = item.dataset.actabGroup;
+            const id = item.dataset.actabId;
+
+            tabs.forEach(function (tab) {
+                if (tab.dataset.actabGroup === group) {
+                    if (tab.dataset.actabId === id) {
+                        tab.classList.add("accordion-active");
+                    } else {
+                        tab.classList.remove("accordion-active");
+                    }
+                }
+
+            });
+            labels.forEach(function (label) {
+                const tabItem = label.parentElement;
+
+                if (tabItem.dataset.actabGroup === group) {
+                    if (tabItem.dataset.actabId === id) {
+                        tabItem.classList.add("accordion-active");
+                    } else {
+                        tabItem.classList.remove("accordion-active");
+                    }
+                }
+            });
+        }
+        labels.forEach(function (label) {
+            label.addEventListener("click", toggleShow);
+        });
+
+        tabs.forEach(function (tab) {
+            tab.addEventListener("click", toggleShow);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon1').on('click', function () {
+                $(this).toggleClass('open');
+                $('.hamburger-menu').toggleClass("active");
+
+            });
+            $('.hamburger-menu li').on('click', function () {
+                $('.hamburger-menu').removeClass('active')
+                $('#nav-icon1').removeClass('open')
+            });
+        });
+    </script>
+    <script src="../libs/wowjs/wow.min.js"></script>
+    <script src="../libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../libs/popper/popper.min.js"></script>
+    <script src="../libs/jquery/jquery.min.js"></script>
+    <script src="../libs/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="../libs/fontawesome/js/all.js"></script>
+    <script src="../libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>

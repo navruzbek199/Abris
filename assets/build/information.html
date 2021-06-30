@@ -8,6 +8,13 @@
     <meta name="theme-color" content="#333">
     <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#333">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#333">
     <link rel="stylesheet" href="../libs/animate.css">
@@ -16,8 +23,8 @@
     <link rel="stylesheet" href="../libs/fontawesome/css/all.css">
     <link rel="stylesheet" href="../libs/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="../libs/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="../libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../libs/owl-carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Abris</title>
 </head>
@@ -33,10 +40,10 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="index.html">Главная</a>
+                                <a  href="index.html">Главная</a>
                             </li>
                             <li class="nav-link">
-                                <a href="about_us.html">О компании</a>
+                                <a  href="about_us.html" >О компании</a>
                                 <div class="nav-link-item">
                                     <a href="about_us.html">Профайл компании</a>
                                     <a href="trade.html">Торговые требования</a>
@@ -45,7 +52,7 @@
                                 </div>
                             </li>
                             <li class="nav-link">
-                                <a  class="active"  href="#">Продукция</a>
+                                <a href="#">Продукция</a>
                                 <div class="nav-link-item">
                                     <a href="product-first.html">Производители</a>
                                     <a href="product-two.html">Авторизация по регионам</a>
@@ -65,9 +72,66 @@
                     </nav>
                 </div>
             </div>
+            <div id="nav-icon1" style="margin-right: 16px;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
-
+    <div class="hamburger-menu">
+        <div class="container">
+            <div class="bar-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a  href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a href="about_us.html">О компании</a>
+                        </li>
+                        <li>
+                            <a href="trade.html">Торговые требования</a>
+                        </li>
+                        <li>
+                            <a href="vacancies.html">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="product-first.html">Продукция</a>
+                        </li>
+                        <li>
+                            <a href="product-two.html">Авторизация по регионам</a>
+                        </li>
+                        <li>
+                            <a href="product-three.html">Сервисное обслуживание</a>
+                        </li>
+                        <li>
+                            <a href="pro-solution.html">Продукты и решения</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-search justify-content-center">
+                    <div class="lang">
+                        <span>Rus</span>
+                        <div class="lang-list">
+                            <a href="#uz">Uzb</a>
+                            <a href="#en">Eng</a>
+                        </div>
+                    </div>
+                    <a class="btn-group">
+                        <input type="text" class="form-control" >
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
     <section>
         <div class="information-page">
             <div class="container">
@@ -166,31 +230,31 @@
                         <h2>по регионам</h2>
                     </div>
                     <div class="row justify-content-lg-between">
-                        <div class="col">
+                        <div class="col-lg col-md-6 col-sm-12">
                             <div class="inform-flag">
                                 <img src="img/am 1.png" alt="">
                                 <p>Азербайджан</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-lg col-md-6 col-sm-12">
                             <div class="inform-flag">
                                 <img src="img/az 1.png" alt="">
                                 <p>Армения</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-lg col-md-6 col-sm-12">
                             <div class="inform-flag">
                                 <img src="img/ge 1.png" alt="">
                                 <p>Грузия</p>
                             </div>
                         </div>
-                        <div class="col-lg">
+                        <div class="col-lg col-md-6 col-sm-12">
                             <div class="inform-flag">
                                 <img src="img/kz 1.png" alt="">
                                 <p>Казахстан</p>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-lg col-md col-sm">
                             <div class="inform-flag">
                                 <img src="img/uz 1.png" alt="">
                                 <p>Узбекистан</p>
@@ -199,7 +263,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-lg-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-12">
                         <div class="inform-btn">
                             <button class="btn">Запросить консультацию <span><img src="img/arrow-white.svg" alt=""></span></button>
                         </div>
@@ -223,9 +287,9 @@
                             возможности сотрудничества. Для того, чтобы начать работать <br>
                             с нами, заполните регистрационную анкету, и наш Менеджер <br>
                             свяжется с Вами.</p>
-                        <a href="#" class="btn">Оставить заявку
+                        <button type="button" data-toggle="modal" data-target="#myModal1" class="btn" style="z-index: 99999;">Оставить заявку
                             <span><img src="img/chevron-right.svg" alt=""></span>
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div class="footer-right d-lg-block">
@@ -264,102 +328,173 @@
                 </div>
             </div>
             <div class="footer-back">
-                <img src="img/global2.png" alt="#">
+                <img src="img/world-unscreen.gif" alt="globus">
             </div>
-            <div class="footer-slide">
-                <div class="swiper-container mySwiper1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <ul class="d-block">
-                                <li><a href="#">США <br>
-                                        Головной офис</a></li>
-                                <div>
-                                    <p>345 Highway 9 South, suite # 377 </p>
-                                    <p>Manalapan, NJ 07726</p>
-                                    <p>Тел.: (732) 252-98-19</p>
-                                    <p>E-mail: info@abrisdc.com</p>
+            <section class="accordion">
+                <section class="accordion-tabs">
+                    <a class="accordion-tab accordion-active" data-actab-group="0" data-actab-id="0">США</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="2">Азербайджан</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="3">Армения</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="4">Беларусь</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="5">Грузия</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="6">Кыргызстан</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="7">Монголия</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="8">Таджикистан</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="9">Туркменистан</a>
+                    <a class="accordion-tab" data-actab-group="0" data-actab-id="10">Узбекистан</a>
+                </section>
+                <section class="accordion-content">
+                    <article class="accordion-item accordion-active" data-actab-group="0" data-actab-id="0">
+                        <div class="accordion-item__label row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="left-map-contact">
+                                    <div class="title">
+                                        <h6>Гловной офис</h6>
+                                    </div>
+                                    <div class="adress">
+                                        <p>345 Highway 9 South, suite # 377
+                                            Manalapan, NJ 07726
+                                            Тел.: (732) 252-98-19
+                                            E-mail: info@abrisdc.com</p>
+                                    </div>
                                 </div>
-                            </ul>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <ul class="d-block">
-                                <li><a href="#">США <br>
-                                        Головной офис</a></li>
-                                <div>
-                                    <p>345 Highway 9 South, suite # 377 </p>
-                                    <p>Manalapan, NJ 07726</p>
-                                    <p>Тел.: (732) 252-98-19</p>
-                                    <p>E-mail: info@abrisdc.com</p>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="d-block">
-                                <li><a href="#">США <br>
-                                        Головной офис</a></li>
-                                <div>
-                                    <p>345 Highway 9 South, suite # 377 </p>
-                                    <p>Manalapan, NJ 07726</p>
-                                    <p>Тел.: (732) 252-98-19</p>
-                                    <p>E-mail: info@abrisdc.com</p>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="d-block">
-                                <li><a href="#">США <br>
-                                        Головной офис</a></li>
-                                <div>
-                                    <p>345 Highway 9 South, suite # 377 </p>
-                                    <p>Manalapan, NJ 07726</p>
-                                    <p>Тел.: (732) 252-98-19</p>
-                                    <p>E-mail: info@abrisdc.com</p>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="d-block">
-                                <li><a href="#">США <br>
-                                        Головной офис</a></li>
-                                <div>
-                                    <p>345 Highway 9 South, suite # 377 </p>
-                                    <p>Manalapan, NJ 07726</p>
-                                    <p>Тел.: (732) 252-98-19</p>
-                                    <p>E-mail: info@abrisdc.com</p>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="d-block">
-                                <li><a href="#">США <br>
-                                        Головной офис</a></li>
-                                <div>
-                                    <p>345 Highway 9 South, suite # 377 </p>
-                                    <p>Manalapan, NJ 07726</p>
-                                    <p>Тел.: (732) 252-98-19</p>
-                                    <p>E-mail: info@abrisdc.com</p>
-                                </div>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="d-block">
-                                <li><a href="#">США <br>
-                                        Головной офис</a></li>
-                                <div>
-                                    <p>345 Highway 9 South, suite # 377 </p>
-                                    <p>Manalapan, NJ 07726</p>
-                                    <p>Тел.: (732) 252-98-19</p>
-                                    <p>E-mail: info@abrisdc.com</p>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-scrollbar"></div>
-                </div>
-            </div>
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="1">
+                        <h4 class="accordion-item__label">Tab 2</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="2">
+                        <h4 class="accordion-item__label">Tab 3</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="3">
+                        <h4 class="accordion-item__label">Tab 4</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="4">
+                        <h4 class="accordion-item__label">Tab 5</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="5">
+                        <h4 class="accordion-item__label">Tab 2</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="6">
+                        <h4 class="accordion-item__label">Tab 3</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="7">
+                        <h4 class="accordion-item__label">Tab 4</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="8">
+                        <h4 class="accordion-item__label">Tab 5</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="9">
+                        <h4 class="accordion-item__label">Tab 4</h4>
+    
+                    </article>
+                    <article class="accordion-item" data-actab-group="0" data-actab-id="10">
+                        <h4 class="accordion-item__label">Tab 4</h4>
+    
+                    </article>
+                </section>
+            </section>
         </div>
+    
+        <div class="modal fade" id="myModal1" style="z-index: 99999;">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Заявка</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="nameId">Имя</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Имя*" required>
+                                    <div id="nameId" class="form-text">Введите свое имя</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Фамилия</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Фамилия*" required>
+                                    <div id="emailHelp" class="form-text">Введите свою фамилию</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Должность</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Должность*"
+                                        required>
+                                    <div id="emailHelp" class="form-text">Введите свою должность</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="number">Телефон*</label>
+                                    <input type="text" class="form-control " id="numberId1" placeholder="Телефон*">
+                                    <div id="numberId" class="form-text">Введите номер телефона</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">E-mail</label>
+                                    <input type="email" class="form-control" id="nameId" placeholder="E-mail*" required>
+                                    <div id="emailHelp" class="form-text">Введите адрес электронной почты</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Компания</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Компания*"
+                                        required>
+                                    <div id="emailHelp" class="form-text">Введите название вашей компании</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Страна</label>
+                                    <input type="name" class="form-control" id="nameId" placeholder="Страна*" required>
+                                    <div id="emailHelp" class="form-text">Укажите ваш регион</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="form-floating">
+                                    <label for="floatingPassword">Интересующее решение</label>
+                                    <input type="name" class="form-control" id="nameId"
+                                        placeholder="Интересующее решение*" required>
+                                    <div id="emailHelp" class="form-text">Введите название интересующей вас позиции
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <button class="btn">Оставить заявку <span><img src="img/arrow-white.svg" alt=""></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+    
+    
+    
+       
     </footer>
     
     
@@ -367,7 +502,48 @@
     
     
     
+    <script>
+        const labels = document.querySelectorAll(".accordion-item__label");
+        const tabs = document.querySelectorAll(".accordion-tab");
     
+        function toggleShow() {
+            const target = this;
+            const item = target.classList.contains("accordion-tab") ?
+                target :
+                target.parentElement;
+            const group = item.dataset.actabGroup;
+            const id = item.dataset.actabId;
+    
+            tabs.forEach(function (tab) {
+                if (tab.dataset.actabGroup === group) {
+                    if (tab.dataset.actabId === id) {
+                        tab.classList.add("accordion-active");
+                    } else {
+                        tab.classList.remove("accordion-active");
+                    }
+                }
+    
+            });
+            labels.forEach(function (label) {
+                const tabItem = label.parentElement;
+    
+                if (tabItem.dataset.actabGroup === group) {
+                    if (tabItem.dataset.actabId === id) {
+                        tabItem.classList.add("accordion-active");
+                    } else {
+                        tabItem.classList.remove("accordion-active");
+                    }
+                }
+            });
+        }
+        labels.forEach(function (label) {
+            label.addEventListener("click", toggleShow);
+        });
+    
+        tabs.forEach(function (tab) {
+            tab.addEventListener("click", toggleShow);
+        });
+    </script>
     
     
     
@@ -403,11 +579,8 @@
     <script src="../libs/fontawesome/js/all.js"></script>
     <script src="../libs/fancybox/jquery.fancybox.min.js"></script>
     <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="../libs/slick/slick.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../libs/jqvmap/jquery.vmap.js"></script>
+    <script src="../libs/jqvmap/jquery.vmap.asia.js"></script>
     <script src="js/main.min.js"></script>
 </body>

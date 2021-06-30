@@ -4,11 +4,113 @@
     //= template/head.html
     <link rel="stylesheet" href="libs/jqvmap/jqvmap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jqvmap.min.css">
+    <link rel="stylesheet" type="text/css" href="cssmap-continents/cssmap-continents.css" media="screen" />
     <title>Abris</title>
 </head>
 
 <body>
-    //= template/header.html
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header-nav">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/Abris logo2.svg" alt="brand"></a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-link">
+                                <a class="active" href="about_us.html">О компании</a>
+                                <div class="nav-link-item">
+                                    <a href="about_us.html">Профайл компании</a>
+                                    <a href="trade.html">Торговые требования</a>
+                                    <a href="vacancies.html">Вакансии</a>
+                                    <a href="news.html">Новости</a>
+                                </div>
+                            </li>
+                            <li class="nav-link">
+                                <a href="product-first.html">Продукция</a>
+                                <div class="nav-link-item">
+                                    <a href="product-first.html">Производители</a>
+                                    <a href="product-two.html">Авторизация по регионам</a>
+                                    <a href="product-three.html">Сервисное обслуживание</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="pro-solution.html">Продукты и решения</a>
+                            </li>
+                            <li>
+                                <a href="news.html">Новости</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="nav-icon1" style="margin-right: 16px;">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="hamburger-menu">
+        <div class="container">
+            <div class="bar-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li>
+                            <a class="active" href="about_us.html">О компании</a>
+                        </li>
+                        <li>
+                            <a href="trade.html">Торговые требования</a>
+                        </li>
+                        <li>
+                            <a href="vacancies.html">Вакансии</a>
+                        </li>
+                        <li>
+                            <a href="product-first.html">Продукция</a>
+                        </li>
+                        <li>
+                            <a href="product-two.html">Авторизация по регионам</a>
+                        </li>
+                        <li>
+                            <a href="product-three.html">Сервисное обслуживание</a>
+                        </li>
+                        <li>
+                            <a href="pro-solution.html">Продукты и решения</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-search justify-content-md-right">
+                    <div class="lang">
+                        <span>Rus</span>
+                        <div class="lang-list">
+                            <a href="#uz">Uzb</a>
+                            <a href="#en">Eng</a>
+                        </div>
+                    </div>
+                    <a class="btn-group">
+                        <input type="text" class="form-control">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section>
         <div class="my-company">
@@ -32,7 +134,6 @@
             <div class="my-company-map pt-5">
                 <div class="container">
                     <div id="vmap" style="width: 100%; height: 400px; color: #fff; margin-top: 50px;"></div>
-                    
                 </div>
             </div>
         </div>
@@ -158,7 +259,7 @@
                                         <p>Дивизион Потребительской Электроники, задействован в поставках и продажах
                                             настольных ИТ решений, программного обеспечения и компьютерного
                                             оборудования, а также потребительской и бытовой электроники</p>
-                                        <a href="#" class="btn">Продукты и решения <span><img
+                                        <a href="pro-solution.html" class="btn">Продукты и решения <span><img
                                                     src="img/chevron-right.svg" alt=""></span></a>
                                     </div>
                                 </div>
@@ -171,7 +272,7 @@
                                         <p>Дивизион Потребительской Электроники, задействован в поставках и продажах
                                             настольных ИТ решений, программного обеспечения и компьютерного
                                             оборудования, а также потребительской и бытовой электроники</p>
-                                        <a href="#" class="btn">Продукты и решения <span><img
+                                        <a href="pro-solution.html" class="btn">Продукты и решения <span><img
                                                     src="img/chevron-right.svg" alt=""></span></a>
                                     </div>
                                 </div>
@@ -184,7 +285,7 @@
                                         <p>Дивизион Потребительской Электроники, задействован в поставках и продажах
                                             настольных ИТ решений, программного обеспечения и компьютерного
                                             оборудования, а также потребительской и бытовой электроники</p>
-                                        <a href="#" class="btn">Продукты и решения <span><img
+                                        <a href="pro-solution.html" class="btn">Продукты и решения <span><img
                                                     src="img/chevron-right.svg" alt=""></span></a>
                                     </div>
                                 </div>
@@ -280,22 +381,28 @@
 
 
     //= template/footer.html
-    <script src="libs/jqvmap/jquery.vmap.js"></script>
-    <script src="libs/jqvmap/jquery.vmap.asia.js" charset="utf-8"></script>
-
-
-
-
-
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cssmapsplugin.com/5/jquery.cssmap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/maps/jquery.vmap.world.js" charset="utf-8">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/maps/jquery.vmap.asia.js" charset="utf-8"></script>
+    <script src="libs/jqvmap/jquery.vmap.js"></script>
+    <script src="libs/jqvmap/jquery.vmap.asia.js"></script>
     <script>
+   
+        $(document).ready(function () {
+            jQuery('#vmap').vectorMap({
+                map: 'asia_en',
+                backgroundColor: null,
+                color: '#fff',
+                hoverColor: '#eeeeee',
+                enableZoom: false,
+                showTooltip: false,
+            });
+        });
         $(document).ready(function () {
 
-            var worldMap,
+            var asiaMap,
                 excludeCountries = ["af", "al", "dz", "ao", "zw"],
                 disabledColor = "#aaaaaa",
                 cookieName = "geo";
@@ -321,12 +428,12 @@
             }
 
             function getCountryName(code) {
-                var path = JQVMap.maps["world_en"].paths[code];
+                var path = JQVMap.maps["asia"].paths[code];
                 return path && path.name;
             }
             var fromCountryCode = getCookie(cookieName) || "";
             worldMap = jQuery('#vmap').vectorMap({
-                map: "world_en",
+                map: "asia_en",
                 backgroundColor: "",
                 borderColor: '#1B75BC',
                 borderOpacity: 0.9,
