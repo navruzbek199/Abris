@@ -1,10 +1,10 @@
 footer{
-    margin-top: 50px;
+    margin-top: 40px;
     position: relative;
     background: url('../img/back-header.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     opacity: .8;
     @include mq('desktop', max){
@@ -17,12 +17,12 @@ footer{
         height: 190vh;
     }
     @include mq('phone', max){
-        height: 230vh;
+        height: 250vh;
     }
     .footer-top{
         display: flex;
         justify-content: space-between;
-        padding-top: 100px;
+        padding-top: 50px;
         z-index: 9999;
         @include mq('phablet', max){
             display: block;
@@ -103,8 +103,8 @@ footer{
         .btn {
             font-family: 'Gotham Pro';
             display: inline-block;
-            padding: .75rem 0px .75rem 1.075rem;
             text-transform: capitalize;
+            padding: 10px 0px 10px 10px;
             font-weight: bold;
             font-size: 15px;
             justify-content: space-between;
@@ -119,6 +119,9 @@ footer{
             @include mq('phablet', max){
                 font-size: 12px;
             }
+            @include mq('phone', max){
+                font-size: 10px;
+            }
             span {
                 background: #ffffff;
                 border-radius: 0px 5px 5px 0px;
@@ -128,7 +131,7 @@ footer{
                 margin-left: 33px;
                 font-weight: bold;
                 @include mq('phablet', max){
-                  margin-left: 92px;
+                  margin-left: 30px;
                 }
             }
             &:after {
@@ -220,8 +223,8 @@ footer{
     }
     .footer-back{
         position: absolute;
-        right: 20%;
-        top: 10%;
+        right: 0%;
+        top: 0%;
         z-index: -1;
         height: 700px;
         @include mq('desktop', max){
@@ -247,79 +250,8 @@ footer{
               }
         }
     }
-    .footer-slide{
-        z-index: 9999;
-        display: flex;
-        margin-top: 150px;
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-          }
-          .swiper-slide {
-              z-index: 999;
-            text-align: center;
-            font-size: 18px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            &::after{
-                width: 2000px;
-                height: 2px;
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 55px;
-                display: block;
-                background-color: #fff;
-            }
-            .top{
-                text-align: left;
-                a{
-                    font-weight: bold;
-                    font-size: 15px;
-                    line-height: 19px;
-                    color: #FFFFFF;
-                    padding-bottom: 30px;
-                    text-align: left;
-                    &::after{
-                        width: 5%;
-                        height: 4px;
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        top: 52px;
-                        display: block;
-                        background-color: #fff;
-                        &.active{
-                            border-bottom: 5px solid #fff;
-                        }
-                    }
-                    
-                }
-            }
-            .bottom{
-                margin-top: 30px;
-                p{
-                    font-size: 18px;
-                    line-height: 25px;
-                    color: #FFFFFF;
-                    text-align: left;
-                    margin-bottom: 5px;
-                }
-            }
-          }
-          
-    }
     .accordion{
+        margin-top: 50px;
         margin-left: 40px;
         @include mq('phablet', max){
             margin-left: 0;
