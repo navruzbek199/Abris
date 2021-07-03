@@ -156,8 +156,8 @@
                                 удовлетворения их потребностей в безопасности.</p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="center-new justify-content-center d-flex">
+                    <div class="col-lg-6 offset-3 justify-content-center d-flex">
+                        <div class="center-new ">
                             <p>Недавние исследования показали, что 62 % руководителей ИТ-служб считают, что
                                 многофакторная аутентификация (MFA) является наиболее эффективным способом защиты их
                                 удаленных сотрудников.</p>
@@ -206,7 +206,7 @@
                                 VPN, рабочих станций, поставщиков удостоверений или
                                 облачных приложений. Чтобы дать администраторам
                                 возможность настраивать MFA в соответствии</p>
-                            <button class="btn">Проконсультировать <span><img src="img/arrow-white.svg" alt=""></span>
+                            <button class="btn" data-toggle="modal" data-target="#myModal">Проконсультировать <span><img src="img/arrow-white.svg" alt=""></span>
                             </button>
                         </div>
 
@@ -272,7 +272,7 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="btn-new">
-                            <button class="btn1">Заказать консультацию<span><img src="img/arrow-white.svg" alt=""></span></button>
+                            <button class="btn1" data-toggle="modal" data-target="#myModal">Заказать консультацию<span><img src="img/arrow-white.svg" alt=""></span></button>
                             <a class="btn" href="about_us.html">О компании <span><img src="img/arrow-white.svg" alt=""></span></a>  
                         </div>
                     </div>
@@ -280,7 +280,110 @@
             </div>
         </div>
     </section>
+    <div class="modal fade" id="myModal" style="z-index: 99999;">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Заявка</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form class="">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="nameId">Имя</label>
+                                <input type="name" class="form-control" id="nameId" placeholder="Имя*" required>
+                                <div id="nameId" class="form-text">Введите свое имя</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="floatingPassword">Фамилия</label>
+                                <input type="name" class="form-control" id="nameId" placeholder="Фамилия*" required>
+                                <div id="emailHelp" class="form-text">Введите свою фамилию</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="floatingPassword">Должность</label>
+                                <input type="name" class="form-control" id="nameId" placeholder="Должность*"
+                                    required>
+                                <div id="emailHelp" class="form-text">Введите свою должность</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="number">Телефон*</label>
+                                <input type="text" class="form-control " id="numberId1" placeholder="Телефон*">
+                                <div id="numberId" class="form-text">Введите номер телефона</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="floatingPassword">E-mail</label>
+                                <input type="email" class="form-control" id="nameId" placeholder="E-mail*" required>
+                                <div id="emailHelp" class="form-text">Введите адрес электронной почты</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="floatingPassword">Компания</label>
+                                <input type="name" class="form-control" id="nameId" placeholder="Компания*"
+                                    required>
+                                <div id="emailHelp" class="form-text">Введите название вашей компании</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="floatingPassword">Страна</label>
+                                <input type="name" class="form-control" id="nameId" placeholder="Страна*" required>
+                                <div id="emailHelp" class="form-text">Укажите ваш регион</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="form-floating">
+                                <label for="floatingPassword">Интересующее решение</label>
+                                <input type="name" class="form-control" id="nameId"
+                                    placeholder="Интересующее решение*" required>
+                                <div id="emailHelp" class="form-text">Введите название интересующей вас позиции
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-12">
+                            <button class="btn" data-toggle="modal" data-target="#success_tic">Оставить заявку <span><img src="img/arrow-white.svg" alt=""></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Modal footer -->
+          </div>
+        </div>
+    </div>
 
+    <div id="success_tic" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <a class="close" href="#" data-dismiss="modal">&times;</a>
+                <div class="page-body">
+                    <div class="head">
+                        <h3 style="margin-top:5px;">Lorem ipsum dolor sit amet</h3>
+                        <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
 
+                    <h1 style="text-align:center;">
+                        <div class="checkmark-circle">
+                            <div class="background"></div>
+                            <div class="checkmark draw"></div>
+                        </div>
+                    <h1>
+                </div>
+            </div>
+        </div>
+    </div>
     //= template/footer.html
 </body>

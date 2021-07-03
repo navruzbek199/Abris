@@ -145,7 +145,9 @@ $(document).ready(function () {
   });
 });
 
-
+// $('#closeBtn').click(function() {
+//   $('#modal').modal('hide');
+//   });
   
 
 

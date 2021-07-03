@@ -18109,3 +18109,7 @@ $(document).ready(function () {
       // $("#phone-input5").mask("nnnn");
   });
 });
+
+// $('#closeBtn').click(function() {
+//   $('#modal').modal('hide');
+//   });

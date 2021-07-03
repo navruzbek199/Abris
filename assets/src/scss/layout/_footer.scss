@@ -8,7 +8,7 @@ footer{
     width: 100%;
     opacity: .8;
     @include mq('desktop', max){
-        height: 70vh;
+        height: 60vh;
     }
     @include mq('tablet-wide', max){
         height: 100vh;
