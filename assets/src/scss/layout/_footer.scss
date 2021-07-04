@@ -17,7 +17,7 @@ footer{
         height: 190vh;
     }
     @include mq('phone', max){
-        height: 250vh;
+        height: 200vh;
     }
     .footer-top{
         display: flex;

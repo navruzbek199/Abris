@@ -1,16 +1,99 @@
 .my-company-map{
-    .container {
-        margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+  .map-name{
+
+    img{
+      width: 1000px;
+      height: 400px;
+      object-fit: contain;
+      margin: 0 auto;
+      justify-content: center;
+      display: block;
+      @include mq('desktop', max){
+        width: 800px;
       }
-      path {fill: lightgray; stroke: white;}
-      path:hover {fill: gray;}
-      svg{
-          width: 100%;
-        #countries{
-            width: 1000px !important;
-            height: 500px !important;
+      @include mq('phablet', max){
+        width: 390px;
+      }
+      @include mq('phone', max){
+        width: 300px;
+      }
+    }
+  }
+  .map-link{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 25%;
+    top: 55%;
+    @include mq('phablet', max){
+      right: 10%;
+      top: 65%;
+    }
+    @include mq('phone', max){
+      right: 15%;
+      top: 65%;
+    }
+    .left-map-link{
+      list-style: none;
+      display: block;
+      flex-direction: column;
+      padding-left: 0;
+      margin-right: 30px;
+      li{
+        a{
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 18px;
+          color: #FFFFFF;
+          margin-bottom: 20px;
+          @include mq('phone', max){
+            font-size: 12px;
+          }
+          img{
+            margin-right: 10px;
+          }
         }
       }
+    }
+    .right-map-link{
+      list-style: none;
+      display: block;
+      flex-direction: column;
+      padding-left: 0;
+      li{
+        a{
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 18px;
+          color: #FFFFFF;
+          margin-bottom: 20px;
+          @include mq('phone', max){
+            font-size: 12px;
+          }
+          img{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+    
+      // path {fill: lightgray; stroke: white;}
+      // path:hover {fill: gray;}
+      // svg{
+      //     width: 1000px !important;
+      //     height: 400px !important;
+      //     path{
+      //       width: 1000px !important;
+      //       height: 400px !important;
+      //     }
+      //   #countries{
+      //       width: 1000px !important;
+      //       height: 500px !important;
+      //   }
+      // }
     // .map{
     //     .kz{
     //         text-align: center;
