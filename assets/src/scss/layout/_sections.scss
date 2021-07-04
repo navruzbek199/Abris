@@ -2724,6 +2724,24 @@
 
 .product-first-page {
   padding-top: 100px;
+  .accordion-tabs{
+    justify-content: left;
+  }
+  .accordion-tab{
+    margin-right: 20px;
+  }
+  .accordion-item__label {
+    z-index: 9999;
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: padding .2s ease;
+    transition: padding .2s ease;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
   .title {
     h1 {
       margin-top: 30px;
@@ -2751,7 +2769,7 @@
   }
   .product-after {
     &::after {
-      top: 97%;
+      top: 90%;
       width: 1px;
       height: 3600px;
       content: "";
@@ -2763,7 +2781,7 @@
         left: 32.5%;
       }
       @include mq("desktop", max) {
-        top: 53.5%;
+        top: 50.5%;
         height: 3700px;
         left: 29.5%;
       }
@@ -3745,8 +3763,23 @@
 
 .pro-solution {
   padding-top: 100px;
-  @include mq('phablet', max){
-    padding-top: 100px;
+  .accordion-tabs{
+    justify-content: left;
+  }
+  .accordion-tab{
+    margin-right: 20px;
+  }
+  .accordion-item__label {
+    z-index: 9999;
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: padding .2s ease;
+    transition: padding .2s ease;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
   }
   .title {
     margin-bottom: 50px;
@@ -3888,7 +3921,7 @@
       height: 1px;
       position: absolute;
       left: 21%;
-      top: 225.3%;
+      top: 215.3%;
       content: "";
       display: block;
       background-color: #003056;
@@ -3935,7 +3968,7 @@
       height: 10px;
       position: absolute;
       left: 47.6%;
-      top: 163.6%;
+      top: 151.6%;
       content: "";
       display: block;
       background-color: #1b75bc;
@@ -3953,7 +3986,7 @@
       height: 10px;
       position: absolute;
       left: 47.6%;
-      top: 224.7%;
+      top: 214.7%;
       content: "";
       display: block;
       background-color: #1b75bc;
@@ -4009,7 +4042,7 @@
       height: 1px;
       position: absolute;
       left: 21%;
-      top: 164%;
+      top: 152%;
       content: "";
       display: block;
       background-color: #003056;
