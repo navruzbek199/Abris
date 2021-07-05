@@ -12,7 +12,7 @@
       justify-content: center;
       display: block;
       @include mq('desktop', max){
-        width: 800px;
+        width: 700px;
       }
       @include mq('phablet', max){
         width: 390px;
@@ -34,7 +34,7 @@
     justify-content: center;
     position: absolute;
     right: 25%;
-    top: 55%;
+    top: 65%;
     @include mq('phablet', max){
       right: 10%;
       top: 65%;
@@ -49,6 +49,7 @@
       flex-direction: column;
       padding-left: 0;
       margin-right: 30px;
+      position: relative;
       li{
         a{
           font-weight: normal;
@@ -63,8 +64,26 @@
             margin-right: 10px;
           }
         }
+        .link-map-item{
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          opacity: 0;
+          &::marker{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+        }
+        &:hover{
+          .az-map-item{
+            opacity: 1;
+            visibility: hidden;
+          }
+        }
       }
-    }
+      
+  }
     .right-map-link{
       list-style: none;
       display: block;

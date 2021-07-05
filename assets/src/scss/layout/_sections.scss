@@ -2767,38 +2767,39 @@
       color: #003056;
     }
   }
-  .product-after {
-    &::after {
-      top: 90%;
-      width: 1px;
-      height: 3600px;
-      content: "";
-      position: absolute;
-      left: 30.4%;
-      background: #003056;
-      @include mq("desktop-wide", min){
-        top: 49%;
-        left: 32.5%;
-      }
-      @include mq("desktop", max) {
-        top: 50.5%;
-        height: 3700px;
-        left: 29.5%;
-      }
-      @include mq('tablet-wide', max){
-        display: none;
-      }
-      @include mq('phablet', max){
-        display: none;
-      }
-    }
-  }
+  // .product-after {
+  //   &::after {
+  //     top: 90%;
+  //     width: 1px;
+  //     height: 3600px;
+  //     content: "";
+  //     position: absolute;
+  //     left: 30.4%;
+  //     background: #003056;
+  //     @include mq("desktop-wide", min){
+  //       top: 49%;
+  //       left: 32.5%;
+  //     }
+  //     @include mq("desktop", max) {
+  //       top: 50.5%;
+  //       height: 3700px;
+  //       left: 29.5%;
+  //     }
+  //     @include mq('tablet-wide', max){
+  //       display: none;
+  //     }
+  //     @include mq('phablet', max){
+  //       display: none;
+  //     }
+  //   }
+  // }
   .product-item {
     padding: 50px 10px;
     display: flex;
     align-items: center;
     width: 100%;
     position: relative;
+    border-bottom: 0.5px solid #1e1f20;
     @include mq('tablet-wide', max){
       display: block;
       margin: 0 auto;
@@ -2813,44 +2814,45 @@
           width: unset;
         }
       }
-      &::after {
-        top: -90px;
-        width: 1050px;
-        height: 1px;
-        content: "";
-        position: absolute;
-        left: 0px;
-        background: #003056;
-        @include mq("desktop", max) {
-          width: 980px;
-        }
-        @include mq('tablet-wide', max){
-          display: none;
-        }
-        @include mq('phablet', max){
-          display: none;
-        }
-      }
-      &::before {
-        top: -95px;
-        width: 10px;
-        height: 10px;
-        content: "";
-        position: absolute;
-        left: 109%;
-        background: #1b75bc;
-        @include mq('tablet-wide', max){
-          display: none;
-        }
-        @include mq('phablet', max){
-          display: none;
-        }
-      }
+      // &::after {
+      //   top: -90px;
+      //   width: 1050px;
+      //   height: 1px;
+      //   content: "";
+      //   position: absolute;
+      //   left: 0px;
+      //   background: #003056;
+      //   @include mq("desktop", max) {
+      //     width: 980px;
+      //   }
+      //   @include mq('tablet-wide', max){
+      //     display: none;
+      //   }
+      //   @include mq('phablet', max){
+      //     display: none;
+      //   }
+      // }
+      // &::before {
+      //   top: -95px;
+      //   width: 10px;
+      //   height: 10px;
+      //   content: "";
+      //   position: absolute;
+      //   left: 109%;
+      //   background: #1b75bc;
+      //   @include mq('tablet-wide', max){
+      //     display: none;
+      //   }
+      //   @include mq('phablet', max){
+      //     display: none;
+      //   }
+      // }
     }
     .product-item-text {
       width: 100%;
       justify-content: space-between;
       display: block;
+      border-left: .5px solid #1e1f20;
       @include mq('tablet-wide', max){
         display: block;
         width: 100%;
@@ -3482,12 +3484,30 @@
 
 .product-three-page {
   padding-top: 100px;
-  .accordion {
-    margin-top: 0px;
+  .accordion-tabs{
+    justify-content: left;
   }
-  .accordion-item__label{
-    margin: 30px 0px 0px;
+  .accordion-tab{
+    margin-right: 20px;
   }
+  .accordion-item__label {
+    z-index: 9999;
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: padding .2s ease;
+    transition: padding .2s ease;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+  // .accordion {
+  //   margin-top: 0px;
+  // }
+  // .accordion-item__label{
+  //   margin: 30px 0px 0px;
+  // }
   .title {
     margin-bottom: 50px;
     h1 {
@@ -3538,159 +3558,115 @@
       
     }
   }
-  .product-link {
-    margin-top: 150px;
-    position: relative;
-    margin-bottom: 100px;
-    nav {
-      width: 100%;
-      z-index: 999;
-      display: flex;
-      @include mq("desktop", max) {
-        width: 100%;
-      }
-      &::after {
-        position: absolute;
-        height: 3px;
-        width: 1280px;
-        background: #1b75bc;
-        content: "";
-        top: 30px;
-        display: block;
-        @include mq("desktop", max) {
-          width: 790px;
-        }
-      }
-      a {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 14px;
-        color: #003056;
-        margin-right: 30px;
-        padding-bottom: 10px;
-        &:hover {
-          border-bottom: 3px solid #1b75bc;
-        }
-        &.active {
-          font-weight: bold;
-          font-size: 18px;
-          line-height: 17px;
-          text-transform: uppercase;
-          color: #003056;
-          border-bottom: 3px solid #1b75bc;
-        }
-      }
-    }
-  }
-  .after {
-    &::after {
-      display: block;
-      width: 2px;
-      height: 1350px;
-      position: absolute;
-      background: #1e1f20;
-      content: "";
-      top: 86%;
-      left: 48%;
-      @include mq("desktop", max) {
-        display: none;
-      }
-      @include mq("tablet-wide", max) {
-        display: none;
-      }
-      @include mq("phablet", max) {
-        display: none;
-      }
-    }
-    &::before {
-      display: block;
-      width: 1107px;
-      height: 2px;
-      position: absolute;
-      background: #1e1f20;
-      content: "";
-      top: 130%;
-      left: 5%;
-      @include mq("desktop", max) {
-        width: 1022px;
-        display: none;
-        left: 0%;
-      }
-      @include mq("tablet-wide", max) {
-        display: none;
-      }
-      @include mq("phablet", max) {
-        display: none;
-      }
-    }
-  }
-  .before {
-    &::after {
-      content: "";
-      background-color: #1b75bc;
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      left: 47.8%;
-      top: 129.6%;
-      display: block;
-      @include mq("desktop", max) {
-        display: none;
-      }
-      @include mq("tablet-wide", max) {
-        display: none;
-      }
-      @include mq("phablet", max) {
-        display: none;
-      }
+  // .after {
+  //   &::after {
+  //     display: block;
+  //     width: 2px;
+  //     height: 1350px;
+  //     position: absolute;
+  //     background: #1e1f20;
+  //     content: "";
+  //     top: 86%;
+  //     left: 48%;
+  //     @include mq("desktop", max) {
+  //       display: none;
+  //     }
+  //     @include mq("tablet-wide", max) {
+  //       display: none;
+  //     }
+  //     @include mq("phablet", max) {
+  //       display: none;
+  //     }
+  //   }
+  //   &::before {
+  //     display: block;
+  //     width: 1107px;
+  //     height: 2px;
+  //     position: absolute;
+  //     background: #1e1f20;
+  //     content: "";
+  //     top: 130%;
+  //     left: 5%;
+  //     @include mq("desktop", max) {
+  //       width: 1022px;
+  //       display: none;
+  //       left: 0%;
+  //     }
+  //     @include mq("tablet-wide", max) {
+  //       display: none;
+  //     }
+  //     @include mq("phablet", max) {
+  //       display: none;
+  //     }
+  //   }
+  // }
+  // .before {
+  //   &::after {
+  //     content: "";
+  //     background-color: #1b75bc;
+  //     width: 10px;
+  //     height: 10px;
+  //     position: absolute;
+  //     left: 47.8%;
+  //     top: 129.6%;
+  //     display: block;
+  //     @include mq("desktop", max) {
+  //       display: none;
+  //     }
+  //     @include mq("tablet-wide", max) {
+  //       display: none;
+  //     }
+  //     @include mq("phablet", max) {
+  //       display: none;
+  //     }
 
-    }
-    &::before {
-      display: block;
-      width: 1107px;
-      height: 2px;
-      position: absolute;
-      background: #1e1f20;
-      content: "";
-      top: 192%;
-      left: 5%;
-      @include mq("desktop", max) {
-        width: 1022px;
-        left: 0%;
-        display: none;
-      }
-      @include mq("tablet-wide", max) {
-        display: none;
-      }
-      @include mq("phablet", max) {
-        display: none;
-      }
-    }
-  }
-  .before1 {
-    &::after {
-      content: "";
-      background-color: #1b75bc;
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      left: 47.7%;
-      top: 191.6%;
-      display: block;
-    }
-    @include mq("desktop", max) {
-      display: none;
-    }
-    @include mq("tablet-wide", max) {
-      display: none;
-    }
-    @include mq("phablet", max) {
-      display: none;
-    }
-  }
+  //   }
+  //   &::before {
+  //     display: block;
+  //     width: 1107px;
+  //     height: 2px;
+  //     position: absolute;
+  //     background: #1e1f20;
+  //     content: "";
+  //     top: 192%;
+  //     left: 5%;
+  //     @include mq("desktop", max) {
+  //       width: 1022px;
+  //       left: 0%;
+  //       display: none;
+  //     }
+  //     @include mq("tablet-wide", max) {
+  //       display: none;
+  //     }
+  //     @include mq("phablet", max) {
+  //       display: none;
+  //     }
+  //   }
+  // }
+  // .before1 {
+  //   &::after {
+  //     content: "";
+  //     background-color: #1b75bc;
+  //     width: 10px;
+  //     height: 10px;
+  //     position: absolute;
+  //     left: 47.7%;
+  //     top: 191.6%;
+  //     display: block;
+  //   }
+  //   @include mq("desktop", max) {
+  //     display: none;
+  //   }
+  //   @include mq("tablet-wide", max) {
+  //     display: none;
+  //   }
+  //   @include mq("phablet", max) {
+  //     display: none;
+  //   }
+  // }
   .vacan-card {
     padding: 20px 10px;
+    border-bottom: .5px solid #1e1f20;
     .vacan-titl {
       h3 {
         font-weight: bold;
@@ -4054,6 +4030,8 @@
   .pro-item {
     margin-bottom: 100px;
     padding: 30px;
+    border-right: .5px solid #1e1f20;
+    border-left:  .5px solid #1e1f20;
     @include mq('phablet', max){
       padding: 0;
     }
